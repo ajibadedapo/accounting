@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('invoice', 'InvoiceController');
+
+Route::view('invoicedesign', 'invoice.formdesign');
